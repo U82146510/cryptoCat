@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cryptoCat</title>
+    <style>
+        /* Resetting margin and padding for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            text-align: center;
+        }
+
+        .info {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .info h1 {
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .info p {
+            font-size: 16px;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        form {
+            background: #ffffff;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(72, 128, 74, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .info, form {
+                width: 100%;
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="info">
+        <h1>Welcome to CryptoNode</h1>
+        <p>This is a private, encrypted chat service.</p>
+        <p>Click the button below to generate a private chat link. The link will appear at the top of the chat. Share it with the second person to start a secure conversation.</p>
+    </div>
+    <form action="/" method="POST">
+        <button type="submit">Generate p2p Chat</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>cryptoCat</title>
+    <link rel="stylesheet" href="/styles.css"> 
+</head>
+<body>
+    <div class="chat-container">
+        <div class="messages" id="messages">
+            <!-- Incoming messages will be displayed here -->
+            <div class="httplink" id="httplink">
+                <a href="https://example.com" id="linkText">Example Link</a>
+                <button id="copyButton" onclick="copy_the_link()">Copy</button>
+            </div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/main_socket.js"></script> <!-- Link to your JS file -->
+    <script src="/encrypt_decrypt_messages.js"></script> <!-- Link to your JS file -->
+    <script src="/get_link_when_you_click.js"></script> <!-- Link to your JS file -->
+    <script src="/send_message.js"></script> <!-- Link to your JS file -->
+    <script src="/receive_message.js"></script> <!-- Link to your JS file -->
+</body>
+</html>
