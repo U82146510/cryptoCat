@@ -21,7 +21,7 @@ Cryptocat is a peer-to-peer (P2P) synchronous web-based crypto chat application.
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/cryptocat.git
+   git clone https://github.com/U82146510/cryptocat.git
    cd cryptocat
 2.Install Dependencies:
 npm install
