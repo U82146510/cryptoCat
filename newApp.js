@@ -24,8 +24,8 @@ app.use("/", index_handler); // Index page
 
 // HTTPS Server Configuration
 const options = {
-    key: fs.readFileSync("/etc/letsencrypt/live/cryptnode.ddns.net/privkey.pem"),
-    cert: fs.readFileSync("/etc/letsencrypt/live/cryptnode.ddns.net/fullchain.pem"),
+    key: fs.readFileSync("your key file"),
+    cert: fs.readFileSync("your cert file"),
 };
 
 const httpsServer = https.createServer(options, app);
